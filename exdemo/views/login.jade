@@ -1,0 +1,22 @@
+//- <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+//- <link rel="stylesheet" href="stylesheets/gaya.css" media="screen" type="text/css" />
+block content
+body
+form(methide="POST",action="/auth")
+    .login-card
+      h1 Login
+      br
+      form
+        input#nama(type='text', name='email', placeholder='Username')
+        input#password(type='password', name='password', placeholder='Password')
+        input.login.login-submit(type='submit')
+      .login-help
+        a(href='#') Register
+        |  • 
+        a(href='#') Forgot Password
+    // <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div>
+    script(src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js')
+
+
+
+    

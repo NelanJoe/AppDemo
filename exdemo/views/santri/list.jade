@@ -1,0 +1,31 @@
+link(rel="stylesheet", href="stylesheets/list.css")
+extends ../layout.jade
+block content
+    h4 List Santri
+    button(type="submit", action="/santri/create") 
+        | Creat
+    .mdl-grid.portfolio-max-width
+        each santri in data_santri
+            .mdl-cell.mdl-card.mdl-shadow--4dp.portfolio-card
+                .mdl-card__media
+                    if santri.foto    
+                        img.article-image(src='#{santri.foto}', border='0', alt='')
+                    else  
+                        img.article-image(src='unphoto.png', border='0', alt='')
+                .mdl-card__title
+                    h2.mdl-card__title-text #{santri.nama}
+                .mdl-card__supporting-text
+                    | Laboris veniam nisi duis exercitation dolor ex laborum enim proident quis adipisicing aliqua veniam consectetur. Occaecat deserunt enim amet exercitation ipsum consequat quis nulla.
+                .mdl-card__actions.mdl-card--border
+                    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent(href='santri/detail/#{santri.id}', data-upgraded=',MaterialButton,MaterialRipple')
+                        | Lihat Profile
+                    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent(href='santri/detail/', data-upgraded=',MaterialButton,MaterialRipple')
+                        | Tambah Santri
+                    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent(href='santri/detail/', data-upgraded=',MaterialButton,MaterialRipple')
+                        | Edit Santri
+                    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent(href='santri/detail/', data-upgraded=',MaterialButton,MaterialRipple')
+                        | Delete Santri
+                    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect.mdl-button--accent(href='santri/upload/#{santri.id}', data-upgraded=',MaterialButton,MaterialRipple')
+                        | Upload Foto
+                        span.mdl-button__ripple-container
+                            span.mdl-ripple

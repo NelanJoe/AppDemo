@@ -1,0 +1,17 @@
+extends ../layout.jade
+block content
+    form(method='POST', action='/santri/create')
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#nama.mdl-textfield__input(type='text',name='nama')
+            label.mdl-textfield__label(for='nama',) Nama Santri
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#hp.mdl-textfield__input(type='text',name='hp')
+            label.mdl-textfield__label(for='hp',) Nomor WhatsApp
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#asal.mdl-textfield__input(type='text',name='asal')
+            label.mdl-textfield__label(for='asal',) Asal
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#asal.mdl-textfield__input(type='text',name='foto')
+            label.mdl-textfield__label(for='foto',) Foto
+        button.mdl-button.mdl.button--raised.mdl-button--accent(type='submit')
+                | Simpan

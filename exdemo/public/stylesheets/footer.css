@@ -1,0 +1,21 @@
+#footer-content {
+    background-color: {{primary_color}};
+  
+  
+    #contact-info {
+      color: #ffffff;
+      display: flex;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 20px 0 40px 0;
+      text-align: center;
+  
+      ul {
+        margin: 0 auto;
+      }    
+  
+      li {
+        list-style-type: none;
+      }
+    }
+  }

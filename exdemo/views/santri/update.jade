@@ -1,0 +1,34 @@
+script(src='/javascript/upload.js')
+<link rel="stylesheet" href="/stylesheets/upload.css" media="screen" type="text/css" />
+block content
+body
+form(method="POST",action="/uploadfoto/#{id}",enctype="multipart/form-data")
+    br
+    input(type="file", name="fotoprofile")
+    br
+    input#nama(type="submit", value="Unggah Foto")
+
+    //- .upload
+    //- .upload-files
+    //-     header
+    //-     p
+    //-         i.fa.fa-cloud-upload(aria-hidden='true')
+    //-         span.up up
+    //-         span.load load
+    //-     #drop.body
+    //-     i.fa.fa-file-text-o.pointer-none(aria-hidden='true')
+    //-     p.pointer-none
+    //-         b Drag and drop
+    //-         |  files here 
+    //-         br
+    //-         |  or 
+    //-         a#triggerFile(href='') browse
+    //-         |  to begin the upload
+    //-     input(type='file', name='fotoprofile', multiple='multiple')
+    //-     footer
+    //-     .divider
+    //-         span
+    //-         ar FILES
+    //-     .list-files
+    //-         // template
+    //-     input#nama(type="submit", value="Unggah Foto")

@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    //- link(rel='stylesheet', href='/material.min.css')
+    link(rel='stylesheet', href='/stylesheets/material-new.min.css')
+    script(src='/material.min.js')
+  body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      //- header
+      include ./includes/header.jade
+      block content
+      //- footer
+      include ./includes/footer.jade
